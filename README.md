@@ -72,8 +72,7 @@ from scipy.stats import shapiro
 stat, p = shapiro(residuals)
 print('Shapiro-Wilk Test: p-value=%.3f' % (p))
 
-# INTALL THIS PACKAGE
-pip install pingouin 
+# INTALL THIS PACKAGE -- pip install pingouin ## 
 
 # pimgouin to check P value of Env and see if it signficantly affects summed coculture
 # and the effect of the covariate 
