@@ -60,7 +60,7 @@ import matplotlib.pyplot as plt
 
 residuals = model2.resid
 fig, ax = plt.subplots()
-ax.scatter(model.predict(), residuals)
+ax.scatter(model2.predict(), residuals)
 ax.axhline(0, color='red', lw=2)
 ax.set_xlabel('Predicted values')
 ax.set_ylabel('Residuals')
