@@ -2,14 +2,14 @@
  
 ## Importing data and visualing effects 
 
- *import data*
+ #import data#
 
 'import pandas as pd'
 
 'clone = ("./broth_clone_dummy.csv")'
 'clone_data = pd.read_csv(clone)'
 
-*Visualise data to see how environment affects the combined cococulture density of pairs*
+#Visualise data to see how environment affects the combined cococulture density of pairs#
 
 'import seaborn as sns'
 
@@ -43,7 +43,7 @@ sns.relplot(
     ylabel="Coculture",
 )
 
-*this plot shows us that we are meeting the assumption and that this is an interesting relationship to investigate further*
+#this plot shows us that we are meeting the assumption and that this is an interesting relationship to investigate further#
 
 'import pandas as pd'
 'import statsmodels.api as sm'
@@ -55,7 +55,7 @@ sns.relplot(
 
 'print(model2.summary())'
 
-*print output summary shows us which terms within the three level categorical treatment are significant*
+#print output summary shows us which terms within the three level categorical treatment are significant#
 
 # Plotting residuals to check model 
 'import matplotlib.pyplot as plt'
@@ -69,7 +69,7 @@ sns.relplot(
 'ax.set_title('Residuals vs. Predicted')'
 'plt.show()'
 
-*Normality test for residuals is ok here as n is under 50*
+#Normality test for residuals is ok here as n is under 50#
 
 'from scipy.stats import shapiro'
 'stat, p = shapiro(residuals)'
@@ -77,7 +77,7 @@ sns.relplot(
 
 # INTALL THIS PACKAGE -- pip install pingouin ## 
 
-*pimgouin to check P value of Env and see if it signficantly affects summed coculture and the effect of the covariate*
+#pimgouin to check P value of Env and see if it signficantly affects summed coculture and the effect of the covariate#
 
 'from pingouin import ancova, read_dataset'
 
