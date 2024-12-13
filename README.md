@@ -4,6 +4,9 @@
 
  #import data#
 
+print(os.getcwd()) # check your working directory 
+#os.chdir("COPY PATH TO LOCATION OF FILE")# 
+
 import pandas as pd
 
 clone = ("./broth_clone_dummy.csv")
