@@ -4,6 +4,7 @@
 
  #import data#
 
+import os 
 print(os.getcwd()) # check your working directory 
 #os.chdir("COPY PATH TO LOCATION OF FILE")# 
 
